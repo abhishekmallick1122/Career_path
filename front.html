@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+
+  <meta charset="UTF-8">
+  <title>Front-End Developer</title>
+  <link rel="stylesheet" href="css/index.css">
+  <style>
+    body {
+        
+      position: relative;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    .bg-blur {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+      background: url('images/backg1.jpg') no-repeat center center fixed;
+      background-size: cover;
+      filter: blur(5px) brightness(0.7);
+    }
+    /* Optional: Make sure content is readable */
+    main, header {
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-blur"></div>
+  <header>
+    <div class="navbar">
+      <div class="nav-left">
+        <span class="icon">👤</span>
+        <a href="index.html">Home</a>
+        <a href="#">Career Progress</a>
+        <a href="#">Dashboard</a>
+      </div>
+      <div class="nav-right">
+        <input type="text" placeholder="Search...">
+      </div>
+    </div>
+  </header>
+</body>
+<form>
+  <!-- form fields here -->
+</form>
+<form>
+  <!-- form fields here -->
+</form>
+<!-- <img src="images/map1.jpg" style="position: absolute; top: 0; right: 0;"> -->
+</html>
