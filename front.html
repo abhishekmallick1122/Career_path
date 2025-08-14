@@ -1,37 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Front-End Developer Roadmap</title>
+<link rel="stylesheet" href="css/front.css">
 
-  <meta charset="UTF-8">
-  <title>Front-End Developer</title>
-  <link rel="stylesheet" href="css/index.css">
-  <style>
-    body {
-        
-      position: relative;
-      min-height: 100vh;
-      margin: 0;
-      padding: 0;
-      overflow-x: hidden;
-    }
-    .bg-blur {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      z-index: -1;
-      background: url('images/backg1.jpg') no-repeat center center fixed;
-      background-size: cover;
-      filter: blur(5px) brightness(0.7);
-    }
-    /* Optional: Make sure content is readable */
-    main, header {
-      position: relative;
-      z-index: 1;
-    }
-  </style>
 </head>
 <body>
   <div class="bg-blur"></div>
@@ -48,12 +22,43 @@
       </div>
     </div>
   </header>
+
+<div class="container">
+    <h1>🚀 Front-End Developer Roadmap</h1>
+
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+    <p id="progress-text">0% Completed</p>
+
+    <div class="roadmap">
+        <!-- Step Card -->
+        <div class="step-card">
+            <h2>Step 1: Learn HTML</h2>
+            <label><input type="checkbox" class="task"> HTML Basics <a href="#" target="_blank">Watch</a></label>
+            <label><input type="checkbox" class="task"> Semantic HTML <a href="#" target="_blank">Watch</a></label>
+        </div>
+
+        <div class="step-card">
+            <h2>Step 2: Learn CSS</h2>
+            <label><input type="checkbox" class="task"> CSS Basics <a href="#" target="_blank">Watch</a></label>
+            <label><input type="checkbox" class="task"> Flexbox & Grid <a href="#" target="_blank">Watch</a></label>
+        </div>
+
+        <div class="step-card">
+            <h2>Step 3: Learn JavaScript</h2>
+            <label><input type="checkbox" class="task"> JavaScript Basics <a href="#" target="_blank">Watch</a></label>
+            <label><input type="checkbox" class="task"> DOM Manipulation <a href="#" target="_blank">Watch</a></label>
+        </div>
+
+        <div class="step-card">
+            <h2>Step 4: Learn a Front-End Framework</h2>
+            <label><input type="checkbox" class="task"> React Basics <a href="#" target="_blank">Watch</a></label>
+            <label><input type="checkbox" class="task"> React Hooks <a href="#" target="_blank">Watch</a></label>
+        </div>
+    </div>
+</div>
+
+<script src="script/script.js"></script>
 </body>
-<form>
-  <!-- form fields here -->
-</form>
-<form>
-  <!-- form fields here -->
-</form>
-<!-- <img src="images/map1.jpg" style="position: absolute; top: 0; right: 0;"> -->
 </html>

@@ -73,7 +73,7 @@ body {
 /* Right Search Input */
 .nav-right input {
   padding: 6px 10px;
-  border-radius: 4px;
+  border-radius: 10px;
   border: none;
   transition: box-shadow 0.3s ease;
 }
@@ -273,8 +273,8 @@ button:hover {
 }
 
 .cert-card {
-  background: rgba(255, 255, 255, 0.3); /* translucent white */
-  border-radius: 15px;
+  background: rgba(75, 24, 157, 0.644); /* translucent white */
+  border-radius: 12px;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px); /* For Safari */
   box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
@@ -291,12 +291,12 @@ button:hover {
 
 .cert-card img {
   max-height: 100px;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .cert-card h3 {
   font-size: 1.2rem;
-  color: #1a1a1a;
+  color: #000000;
   margin-bottom: 10px;
 }
 
@@ -337,6 +337,12 @@ button:hover {
   flex-wrap: wrap;
   align-items: center;
   gap: 40px;
+  background: rgba(255, 255, 255, 0.2); /* semi-transparent */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  border-radius: 10px;
+  padding: 20px;
+
 }
 
 .about-content {
@@ -353,32 +359,6 @@ button:hover {
   font-size: 18px;
   line-height: 1.6;
   margin-bottom: 15px;
-}
-
-.btn {
-  display: inline-block;
-  background: #67E8F9;
-  color: #12131A;
-  padding: 12px 30px;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 4px;
-  transition: background 0.3s ease;
-}
-
-.btn:hover {
-  background: #4FC3E8;
-}
-
-.about-image {
-  flex: 1 1 300px;
-  text-align: center;
-}
-
-.about-image img {
-  max-width: 100%;
-  border-radius: 8px;
-  border: 2px solid #67E8F9;
 }
 
 /* Footer Styling */
