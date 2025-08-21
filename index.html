@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CareerPathFinder</title>
+  <link rel="stylesheet" href="css/index.css">
+  <style>
+    body {
+      position: relative;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    .bg-blur {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+      background: url('images/img.jpg') no-repeat center center fixed;
+      background-size: cover;
+      filter: blur(5px) brightness(0.7);
+    }
+    /* Optional: Make sure content is readable */
+    main, header {
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  
+
+
+  <div class="bg-blur"></div>
+  <header>
+    <div class="navbar">
+      <div class="nav-left">
+        <span class="icon">👤</span>
+        <a href="index.html">Home</a>
+        <a href="#">Career Progress</a>
+        <a href="#">Dashboard</a>
+      </div>
+      <div class="nav-right">
+        <input type="text" placeholder="Search...">
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <h1>Discover Your IT Career Path</h1>
+    <p>
+      Unsure about your future in tech? Explore different IT career options, understand the skills required, and find the perfect path for you. Start your journey today!
+    </p>
+
+    <div class="button-container">
+    <a href="front.html">
+      <button class="blue" >Front-End Developer</button>
+      </a>
+      <a href="#">
+      <button class="dark">Back-End Developer</button>
+      </a>
+      <a href="#">
+      <button class="green">Full Stack</button>
+      </a>
+      <a href="#">
+      <button class="yellow">Data Scientist</button>
+      </a>
+
+      <a href="#">
+      <button class="grey">Cloud Engineer</button>
+      </a>
+      <a href="#">
+      <button class="sky">Cybersecurity Specialist</button>
+      </a>
+      <a href="#">
+      <button class="sky">QA Engineer</button>
+      </a>
+      <a href="#">
+      <button class="black">UI/UX Designer</button>
+      </a>
+      
+      <a href="#">
+      <button class="darkgrey">Database Admin</button>
+      </a>
+      <a href="#">
+      <button class="blue">AI/ML Engineer</button>
+      </a>
+      <a href="#">
+      <button class="orange">Database Administrator</button>
+      </a>
+      <!-- <a href="#">
+      <button class="grey">Cloud Engineer</button>
+      </a> -->
+      
+      <a href="#">
+      <button class="sky">Data Analyst</button>
+      </a>
+      <a href="#">
+      <button class="black">Android Developer</button>
+      </a>
+      
+      <a href="#">
+      <button class="darkgrey">Blockchain</button>
+      </a>
+      <a href="#">
+      <button class="blue">Game Developer</button>
+      </a>
+      <a href="#">
+      <button class="orange">PostgreSQL</button>
+      </a>
+      <a href="#">
+      <button class="sky">More Option..</button>
+      </a> 
+    </div>
+    
+
+  </main>
+  <section class="vision-section">
+  <div class="vision-container">
+    <h2>Our Vision</h2>
+    <p>
+      Our vision is to empower job seekers and college newcomers with rich, valuable content that illuminates their path in the tech world. 
+      We aim to clear the confusion by offering well-structured guidance, helping you understand which IT domain aligns with your passion, 
+      and showing you how to reach your goals—step by step. We believe in turning uncertainty into clarity and dreams into direction.
+    </p>
+  </div>
+</section>
+
+<section class="achievements">
+  <h2>Our Achievements</h2>
+  <p >You can be one of us</p>
+
+  <div class="slider-container">
+    <button class="prev">&#10094;</button>
+
+    <div class="card-slider">
+      <div class="card">
+        <img src="images/riya.png" alt="Riya Sharma">
+        <h3>Riya Sharma</h3>
+        <p>Got placed at TCS as Java Developer after completing our Full Stack Course.</p>
+      </div>
+      <div class="card">
+        <img src="images/aditya.png" alt="Aditya Singh">
+        <h3>Aditya Singh</h3>
+        <p>Landed an internship at Amazon Web Services after our Cloud Program.</p>
+      </div>
+      <!-- Add more cards here -->
+       <div class="card">
+        <img src="images/pooja.png" alt="Pooja Mehta">
+        <h3>Pooja Mehta</h3>
+        <p>Started freelancing as UI/UX Designer with ₹50K/month income.</p>
+      </div>
+
+      <div class="card">
+        <img src="images/rahul.png" alt="Rahul Verma">
+        <h3>Rahul Verma</h3>
+        <p>Became a certified Data Analyst and joined a Fortune 500 company.</p>
+      </div>
+
+      <div class="card">
+  <img src="images/shneha.jpg" alt="Sneha Verma">
+  <h3>Sneha Verma</h3>
+  <p>Secured a Software Engineer role at Infosys after completing our Data Structures and Algorithms program.</p>
+</div>
+
+<div class="card">
+  <img src="images/rahulm.webp" alt="Rahul Mehra">
+  <h3>Rahul Mehra</h3>
+  <p>Joined Deloitte as a Cloud Engineer after mastering AWS through our specialized training path.</p>
+</div>
+    </div>
+
+    <button class="next">&#10095;</button>
+  </div>
+</section>
+<script>
+  const slider = document.querySelector('.card-slider');
+  const prevBtn = document.querySelector('.prev');
+  const nextBtn = document.querySelector('.next');
+
+  prevBtn.addEventListener('click', () => {
+    slider.scrollBy({ left: -300, behavior: 'smooth' });
+  });
+
+  nextBtn.addEventListener('click', () => {
+    slider.scrollBy({ left: 300, behavior: 'smooth' });
+  });
+
+  // Auto-slide every 3 seconds
+  setInterval(() => {
+    slider.scrollBy({ left: 300, behavior: 'smooth' });
+  }, 3000);
+</script>
+<section class="certification-platforms">
+  <h2>Free Certification Platforms for Students</h2>
+  <p class="note">
+    Explore trusted platforms that offer <strong>100% free certifications</strong> to help you grow in tech, marketing, cloud, and more. We do not own or represent these sites – we recommend them purely for student welfare.
+  </p>
+
+  
+
+  <div class="certification-grid">
+    <!-- Card 1 -->
+    <div class="cert-card">
+      <img src="images/logo/googlelogo.png" alt="Google Digital Garage Logo" onerror="this.style.display='none'"/>
+      <h3>Google Digital Garage</h3>
+      <p>Free certifications in digital marketing, AI, and business fundamentals from Google.</p>
+      <a href="https://learndigital.withgoogle.com/digitalgarage" target="_blank" class="btn">Explore</a>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="cert-card">
+      <img src="images/logo/freecodecamplogo.png" alt="freeCodeCamp Logo" onerror="this.style.display='none'"/>
+      <h3>freeCodeCamp</h3>
+      <p>Hands-on coding certifications in web dev, Python, and data science – completely free.</p>
+      <a href="https://www.freecodecamp.org/" target="_blank" class="btn">Explore</a>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="cert-card">
+      <img src="images/logo/alisonlogo.png" alt="Alison Logo" onerror="this.style.display='none'"/>
+      <h3>Alison</h3>
+      <p>Free certificates in business, tech, health, and languages.</p>
+      <a href="https://alison.com" target="_blank" class="btn">Explore</a>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="cert-card">
+      <img src="images/logo/coursealogo.png" alt="Coursera Logo" onerror="this.style.display='none'"/>
+      <h3>Coursera (via Financial Aid)</h3>
+      <p>Top university & company-led courses, free with aid. Learn tech, data, and more.</p>
+      <a href="https://coursera.org" target="_blank" class="btn">Explore</a>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="cert-card">
+      <img src="images/logo/edxlogo.png" alt="edX Logo" onerror="this.style.display='none'"/>
+      <h3>edX (Audit + Aid)</h3>
+      <p>Courses from Harvard, MIT, and more. Audit free or apply for aid certificates.</p>
+      <a href="https://edx.org" target="_blank" class="btn">Explore</a>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="cert-card">
+      <img src="images/logo/microsoftlogo.png" alt="Microsoft Learn Logo" onerror="this.style.display='none'"/>
+      <h3>Microsoft Learn</h3>
+      <p>Learn Azure, AI, and cybersecurity with free Microsoft modules & certs.</p>
+      <a href="https://learn.microsoft.com" target="_blank" class="btn">Explore</a>
+    </div>
+  </div>
+</section>
+<!-- About Us Section -->
+<section class="about-us">
+  <div class="about-container">
+    <div class="about-content">
+      <h2>About Us</h2>
+      <p>We are passionate about empowering professionals with free certifications and learning resources. Our mission is to bridge knowledge gaps and foster career growth through curated platforms and expert content.</p>
+      <p>Founded with one goal: democratize access to top-notch education—because everyone deserves the chance to learn, grow, and succeed.</p>
+      
+    </div>
+    
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="simple-footer">
+  <div class="footer-top">
+    <div class="footer-about">
+      <h3>Discover Your IT Career Path</h3>
+      <p>Helping learners access free certifications, career guidance, and skill resources to achieve their goals.</p>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>Email: <a href="mailto:support@itcareerpath.com">support@itcareerpath.com</a></p>
+      <p>Phone: +91 9412064680</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#privacy">Privacy Policy</a></li>
+        <li><a href="#terms">Terms & Conditions</a></li>
+      </ul>
+    </div>
+  </div>
+    <!-- Floating Chat Button -->
+<div class="chat-button" id="chatButton">💬</div>
+
+<!-- Chat Box -->
+<div class="chat-box" id="chatBox">
+  <div class="chat-header">Assistant</div>
+  <div class="chat-messages" id="chatMessages"></div>
+  <input type="text" id="userInput" placeholder="Type your message..." />
+</div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 CareerPathFinder . All Rights Reserved.</p>
+  </div>
+
+
+</body>
+</html>
