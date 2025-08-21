@@ -14,3 +14,9 @@ function updateProgress() {
     progressBar.style.width = percent + "%";
     progressText.textContent = `${percent}% Completed`;
 }
+document.getElementById('chatButton').addEventListener('click', () => {
+  const chatBox = document.getElementById('chatBox');
+  chatBox.style.display = chatBox.style.display === 'none' ? 'flex' : 'none';
+});
+
+
