@@ -64,17 +64,47 @@ CareerPathFinder helps students and early‑career professionals explore **IT ca
 
 ---
 
-## 📈 Visuals & Data (assets)
-- **Generated charts & CSVs (local assets):** `/careerpath_assets/summary_metrics.csv`, `/careerpath_assets/roles_list.csv`, `/careerpath_assets/counts_bar.png`, `/careerpath_assets/content_pie.png`.
 
-_Please download these from the assistant session (links were provided in chat). If you'd like, I can embed optimized images into the repo as `/assets/` and update the README to display them._
+
+Absolutely, Abhishek! Here's a polished **📸 Screenshot Section** you can add to your GitHub README to showcase your project visually and professionally:
+
+---
+
+## 📸 Screenshots
+
+Visual previews of the **Discover Your IT Career Path** website:
+
+### 🏠 Homepage Overview
+- Clean layout with bold hero section
+- Clear call-to-action and navigation
+
+![Homepage Screenshot](https://abhishekmallick1122.github.io/Career_path/screenshot/home.png)
 
 ---
 
-## 🖼️ Screenshots (recommended for README)
-Include 2–3 crisp screenshots: 1) Hero section, 2) Roles list, 3) Achievements carousel. Use `assets/screenshots/` in the repo and reference them in the README for strong visual appeal.
+### 🧭 Career Path Guidance
+- Interactive breakdown of IT domains
+- Helps users choose based on interest and skill
+
+![Career Path Section](https://abhishekmallick1122.github.io/Career_path/certificate/map.png)
 
 ---
+
+### 🎓 Certification Platforms
+- Curated list of free learning resources
+- Includes Google, FreeCodeCamp, Microsoft Learn, and more
+
+![Certification Section](https://abhishekmallick1122.github.io/Career_path/certificate/certi.png)
+
+---
+
+### 🏆 Success Stories
+- Real-world examples of learners placed in top companies
+- Builds trust and motivation
+
+*(Optional: Add screenshot if available)*
+
+
 
 ## 🛠 Tech & Project Structure (suggested)
 ```
