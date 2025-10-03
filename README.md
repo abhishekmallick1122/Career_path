@@ -4,7 +4,7 @@
 
 ---
 
-![Hero](./assets/cover.png)
+![Hero](./images/cover.png)
 
 ## 🔍 One‑line Summary
 CareerPathFinder helps students and early‑career professionals explore **IT career options**, discover the skills required, and jumpstart their learning using **free & trusted platforms**.
@@ -86,7 +86,7 @@ Visual previews of the **Discover Your IT Career Path** website:
 - Interactive breakdown of IT domains
 - Helps users choose based on interest and skill
 
-![Career Path Section](https://abhishekmallick1122.github.io/Career_path/certificate/map.png)
+![Career Path Section](https://abhishekmallick1122.github.io/Career_path/screenshot/map.png)
 
 ---
 
@@ -94,7 +94,7 @@ Visual previews of the **Discover Your IT Career Path** website:
 - Curated list of free learning resources
 - Includes Google, FreeCodeCamp, Microsoft Learn, and more
 
-![Certification Section](https://abhishekmallick1122.github.io/Career_path/certificate/certi.png)
+![Certification Section](https://abhishekmallick1122.github.io/Career_path/screenshot/certi.png)
 
 ---
 
