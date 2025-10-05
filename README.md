@@ -11,7 +11,7 @@ CareerPathFinder helps students and early‑career professionals explore **IT ca
 
 ---
 
-## 📊 Key Snapshot (automatically generated)
+## 📊 Key Snapshot
 - **Unique roles featured:** 15
 - **Free learning platforms listed:** 6
 - **Showcased success stories / achievements:** 6
@@ -61,12 +61,6 @@ CareerPathFinder helps students and early‑career professionals explore **IT ca
 - **M1 (Next 2 weeks):** Add a ‘Role → Roadmap’ subpage with 3 roles fully fleshed out (skills, 3 projects, interview prep).  
 - **M2 (1 month):** Implement a minimal progress tracker + GitHub Issues board for content contributions.  
 - **M3 (2–3 months):** Build personalization quiz + email capture (newsletter) and community Slack/Discord.
-
----
-
-
-
-Absolutely, Abhishek! Here's a polished **📸 Screenshot Section** you can add to your GitHub README to showcase your project visually and professionally:
 
 ---
 
