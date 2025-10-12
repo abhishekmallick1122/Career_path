@@ -1,0 +1,194 @@
+/* ======= GLOBAL STYLES ======= */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: url('images/img.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  background-color: #12131A;
+  color: rgba(255, 255, 255, 0.976);
+  text-align: center;
+  padding: 20px;
+}
+
+main, header {
+  position: relative;
+  z-index: 1;
+}
+
+/* ======= NAVBAR ======= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(44, 62, 80, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 15px 30px;
+  color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-left a {
+  margin: 0 12px;
+  color: white;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-left a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: #1abc9c;
+  transition: width 0.3s ease;
+}
+
+.nav-left a:hover {
+  color: #1abc9c;
+  transform: scale(1.05);
+}
+
+.nav-left a:hover::after {
+  width: 100%;
+}
+
+.icon {
+  margin-right: 16px;
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: rotate(20deg) scale(1.2);
+}
+
+.nav-right input {
+  padding: 6px 10px;
+  border-radius: 10px;
+  border: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.nav-right input:focus {
+  outline: none;
+  box-shadow: 0 0 8px #1abc9c;
+}
+
+/* ======= PAGE CONTENT ======= */
+h1 {
+  margin-bottom: 20px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+#progress-container {
+  width: 80%;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+#progress-bar {
+  height: 15px;
+  width: 0%;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  transition: width 0.3s ease-in-out;
+}
+
+#progress-text {
+  margin: 10px 0 20px;
+}
+
+.roadmap {
+  display: grid;
+  gap: 25px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.step-card {
+  background: rgba(116, 80, 206, 0.1);
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 0 15px rgba(34, 95, 193, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.step-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(37, 31, 149, 0.7);
+}
+
+.step-card h2 {
+  margin-bottom: 10px;
+  color: #8cc3df;
+}
+
+label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0,0,0,0.2);
+  padding: 8px 10px;
+  border-radius: 8px;
+  margin: 5px 0;
+  transition: background 0.2s;
+}
+
+label:hover {
+  background: rgba(0,0,0,0.4);
+}
+
+a {
+  color: #f7f7f7;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  padding: 15px 0;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+/* ======= THEMES ======= */
+body.frontend #progress-bar {
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+}
+
+body.backend #progress-bar {
+  background: linear-gradient(90deg, #00ff85, #00994c);
+}
+
+body.fullstack #progress-bar {
+  background: linear-gradient(90deg, #ff8a00, #ff3c00);
+}
+
+/* ======= ANIMATIONS ======= */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
