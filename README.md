@@ -126,8 +126,9 @@ Please follow the code style: simple HTML/CSS (no frameworks required). For inte
 ---
 
 ## 📬 Contact & Maintainer
-- **Support:** support@itcareerpath.com  
-- **Phone:** +91 9412064680  
+- **Support:** abhishekmallick5049@gmail.com  
+- **Phone:** +91 9412064680
+-  
 
 ---
 
